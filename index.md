@@ -2,42 +2,35 @@
 layout: default
 title: Home
 nav_order: 1
-description: "Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages."
+description: "SANTé stands for Semantic Search Engine and is designed to simplify RDF data access and exploration. SANTé covers different aspects of search engines, such as indexing, ranking as well as interaction. You can use SANTé via the command line or via SANTé Web Interface (smile)."
 permalink: /
 ---
 
-# Focus on writing good documentation.
+# Documentation
 {: .fs-9 }
 
-Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
+SANTé stands for Semantic Search Engine and is designed to simplify RDF data access and exploration. SANTé covers different aspects of search engines, such as indexing, ranking as well as interaction. You can use SANTé via the command line or via SANTé Web Interface (smile).
 {: .fs-6 .fw-300 }
 
-[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/just-the-docs/just-the-docs){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/aksw/sante){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
 {: .new }
-> **Pre-release version `0.4.0.rc2` is available!**
-> See [the CHANGELOG](https://github.com/just-the-docs/just-the-docs/blob/main/CHANGELOG.md) for a detailed breakdown.
-
-{: .warning }
-> Specifying `gem "just-the-docs"` in your `Gemfile` uses the latest ***release*** (`v0.3.3`), ignoring all pre-releases!
-> To use this pre-release, pin it:
-> ```ruby
-> gem "just-the-docs", "0.4.0.rc2"
-> ```
-> and/or
-> ```yaml
-> remote_theme: just-the-docs/just-the-docs@v0.4.0.rc2
-> ```
+> **SANTé in Multilingual support is in development cycle!**
+> See [the other Branch](https://github.com/aksw/sante/tree/mulang) for a detailed breakdown.
 
 ## Getting started
 
-### Dependencies
-
-Just the Docs is built for [Jekyll](https://jekyllrb.com), a static site generator. View the [Jekyll quick start guide](https://jekyllrb.com/docs/) for more information. Just the Docs requires no special plugins and can run on GitHub Pages' standard Jekyll compiler. The [Jekyll SEO Tag plugin](https://github.com/jekyll/jekyll-seo-tag) is included by default (no need to run any special installation) to inject SEO and open graph metadata on docs pages. For information on how to configure SEO and open graph metadata visit the [Jekyll SEO Tag usage guide](https://jekyll.github.io/jekyll-seo-tag/usage/).
 
 ### Quick start: Use as a GitHub Pages remote theme
+
+Browse the sections below to navigate through the documentation:
+
+[Docker Guide]({{ site.baseurl }}{% link docs/creating-an-index/Docker.md %})
+
+
+
 
 1. Add Just the Docs to your Jekyll site's `_config.yml` as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/)
 
@@ -80,6 +73,20 @@ remote_theme: just-the-docs/just-the-docs
 
 4. Point your web browser to [http://localhost:4000](http://localhost:4000)
 
+If that doesn't work,
+
+```
+export PATH="$HOME/.gem/ruby/3.2.0/bin:$PATH"  
+```
+
+```
+source ~/.zshrc       
+```
+
+```
+bundle exec jekyll serve                                                                                     
+```
+
 If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) so that you can more easily work in your development environment.
 
 ### Configure Just the Docs
@@ -90,16 +97,13 @@ If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll loc
 
 ## About the project
 
-Just the Docs is &copy; 2017-{{ "now" | date: "%Y" }} by [Patrick Marsceill](http://patrickmarsceill.com).
+SANTé &copy; by [Edgard Marx](https://aksw.org/EdgardMarx).
 
-### License
-
-Just the Docs is distributed by an [MIT license](https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt).
 
 ### Contributing
 
 When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/just-the-docs/just-the-docs#contributing).
+email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/AKSW/sante-api-docs).
 
 #### Thank you to the contributors of Just the Docs!
 
@@ -110,9 +114,3 @@ email, or any other method with the owners of this repository before making a ch
   </li>
 {% endfor %}
 </ul>
-
-### Code of Conduct
-
-Just the Docs is committed to fostering a welcoming community.
-
-[View our Code of Conduct](https://github.com/just-the-docs/just-the-docs/tree/main/CODE_OF_CONDUCT.md) on our GitHub repository.
